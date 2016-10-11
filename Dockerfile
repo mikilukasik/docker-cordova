@@ -17,3 +17,7 @@ RUN ( sleep 5 && while [ 1 ]; do sleep 1; echo y; done ) | /usr/local/android-sd
 ENV GRADLE_USER_HOME /src/gradle
 VOLUME /src
 WORKDIR /src
+
+
+RUN git clone https://github.com/mikilukasik/chessIonic.git
+RUN cd chessIonic
